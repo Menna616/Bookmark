@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="bookmark mt-5">
+                <h1 class="m-auto position-relative">Bookmarker</h1>
+                <div class="inputs my-5">
+                    <h2 class="pt-4 text-center"><i class="fa-solid fa-bookmark icon1"></i> <span class="icon1">Bookmark your </span><span class="icon2">favorite sites</span> <i class="fa-solid fa-bookmark icon2"></i></h2>
+                    <label for="site-name" class="mt-4"><i class="fa-solid fa-book-bookmark"></i> <span class="ms-2">Site Name</span></label>
+                    <input id="site-name" type="text" name="name" value="" placeholder="Bookmark Name" class="form-control mt-2"/>
+                    <p id="name-alert" class="alert alert-danger d-none">Site Name is empty</p>
+                    <p id="name-exist" class="alert alert-danger d-none">Site Name is exist</p>
+                    <label for="site-url" class="mt-4"><i class="fa-solid fa-link"></i> <span class="ms-2">Site URL</span></label>
+                    <input id="site-url" type="text" name="url" value="" placeholder="Website URL" class="form-control mt-2"/>
+                    <p id="url-alert" class="alert alert-danger d-none">URL Name is empty</p>
+                    <p id="url-exist" class="alert alert-danger d-none">URL Name is exist</p>
+                    <div class="button text-center my-4">
+                        <button class="py-2 px-5 rounded-3 border-0 text-white" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                            
+        
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
